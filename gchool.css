@@ -12,7 +12,7 @@ header h2{
 }
 
 footer {
-     background: #000061;
+     background:rgb(134, 23, 23);
      color: #fff;
      padding:30px 0;
 }
@@ -124,20 +124,20 @@ header nav a {
 
 .ju1 {
      width: 346.666666px;
-     background-color: rgb(43,68,167);
+     background-color: rgb(216, 177, 93);
      padding: 10px;
      box-sizing: border-box;
      
 }
 .ju2 {
      width: 346.666666px;
-     background-color: rgb(0,19,83);
+     background-color: rgb(163, 99, 25);
      padding: 10px;
      box-sizing: border-box;
 }
 .ju3 {
      width: 346.666666px;
-     background-color: rgb(43,68,167);
+     background-color: rgb(207, 167, 81);
      padding: 10px;
      box-sizing: border-box;
 }
@@ -188,11 +188,11 @@ header nav a {
      
 }
 .cobox {
-     background-color: red;
+     background-color: rgb(179, 5, 5);
      height: 180px;
 }
 .cobox2 {
-     background-color: green;
+     background-color: rgb(13, 95, 13);
      height: 180px;
 
 }
