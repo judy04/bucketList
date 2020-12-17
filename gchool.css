@@ -11,6 +11,38 @@ header h2{
      font-size: 45px;
 }
 
+.container {
+     width: 300vw;
+     transition: transform 0.5s;
+ }
+ .inner {
+     width: 100vw;
+     float: left;
+ }
+ .inner img {
+     width: 100%;
+ }
+.cont {
+     position: relative;
+}
+.btn4 {
+     position: absolute;
+     top: 40%;
+     right: 0%;
+}
+.btn5 {
+     position: absolute;
+     top: 40%;
+     left: 0%;
+}
+.b2 {
+     position: absolute;
+     top: 500px;
+     left: 50%;
+
+}
+
+
 footer {
      background:rgb(134, 23, 23);
      color: #fff;
@@ -86,20 +118,6 @@ header nav a {
     color: white;
     font-size: 10px;
     text-align: center;
-}
-#vidio {
-     height: 550px;
-     color:white;
-     text-align: center; 
-}
-
-#vidio h1 {
-     padding-top: 100px;
-     font-size: 50px;
-}
-#vidio h2 {
-     margin-top: 280px;
-     font-size: 300px;
 }
 
 .judy2 {

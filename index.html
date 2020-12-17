@@ -13,7 +13,7 @@
 		<header>
 			<h2>🎅🏻</h2>
 			<div class="inner-container">
-				<h1 id="logo">(사)교육실험실211</h1>
+				<h1 id="logo">2021 거꾸로캠퍼스</h1>
 				<nav>
 					<a href="">배움의 원칙</a>
 					<a href="">교육과정</a>
@@ -24,9 +24,29 @@
 				<button id="button" class="btn-application">입학 상담 및 지원</button>
 			</div>
 		</header>
-		<div id="vidio" style="background-color:rgb(134, 23, 23);">
-			<h1>Merry<br><br>Christmas</h1>
-			<h2>🎄</h2>
+		<div class="cont" style="margin: 0">
+			<div style="overflow: hidden;">
+				<div class="container">
+					<div class="inner">
+						<img src="resource/slide_sample1.jpg">
+					</div>
+					<div class="inner">
+						<img src="resource/slide_sample2.jpg">
+					</div>
+					<div class="inner">
+						<img src="resource/slide_sample3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="b1">
+				<div class='btn4' type=“button’><img src="resource/btn_next.png"></div>
+				<div class='btn5' type=“button’><img src="resource/btn_prev.png"></div>
+			</div>
+			<div class="b2">
+				<button class="btn1">1</button>
+				<button class="btn2">2</button>
+				<button class="btn3">3</button>
+			</div>
 		</div>
 	</div>
 	<br>
@@ -195,27 +215,28 @@
 	</div>
 	</div>
 	<script>
-		var p = document.getElementById("vidio")
-		document.getElementById("button").addEventListener('click', function () {
-			if (p.style.backgroundColor == 'rgb(134, 23, 23)') { /*1,제일 어두움*/
-				p.style.backgroundColor = 'rgb(167, 36, 36)'/*2*/
-			}
-			else if (p.style.backgroundColor == 'rgb(167, 36, 36)') {
-				p.style.backgroundColor = 'rgb(180, 67, 32)' /*3*/
-			}
-			else if (p.style.backgroundColor == 'rgb(180, 67, 32)') {
-				p.style.backgroundColor = 'rgb(216, 164, 53)' /*4,제일 밝음*/
-			}
-			else if (p.style.backgroundColor == 'rgb(216, 164, 53)') {
-				p.style.backgroundColor = 'rgb(180, 67, 33)'
-			}
-			else if (p.style.backgroundColor == 'rgb(180, 67, 33)') {
-				p.style.backgroundColor = 'rgb(167, 36, 37)'
-			}
-			else if (p.style.backgroundColor == 'rgb(167, 36, 37)') {
-				p.style.backgroundColor = 'rgb(134, 23, 23)'
-			}
-		});
+		document.querySelector('.btn1').addEventListener('click', function () {
+			p.style.transform = 'translate(0vw)'
+		})
+		document.querySelector('.btn2').addEventListener('click', function () {
+			p.style.transform = 'translate(-100vw)'
+		})
+		document.querySelector('.btn3').addEventListener('click', function () {
+			p.style.transform = 'translate(-200vw)'
+		})
+
+		var width = 0
+		var p = document.querySelector('.container')
+
+		document.querySelector('.btn4').addEventListener('click', function () {
+			width = width - 100
+			p.style.transform = 'translate(' + width + 'vw)'
+		})
+
+		document.querySelector('.btn5').addEventListener('click', function () {
+			width = width + 100
+			p.style.transform = 'translate(' + width + 'vw)'
+		})
 	</script>
 </body>
 
